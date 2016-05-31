@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scoliosis Protocol</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/bootstrap.css">
+        <link rel="stylesheet" href="style/bootstrap-datepicker.css">
+        <!--<link rel="stylesheet" href="style/bootstrap-datepicker.standalone.css">
+        <link rel="stylesheet" href="style/bootstrap-datetimepicker-standalone.css">
+        <link rel="stylesheet" href="style/bootstrap-datetimepicker.css">-->
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="script/moment.js"></script>
+        <script src="script/bootstrap-datepicker.js"></script>
+        <!--<script src="script/bootstrap-datetimepicker.min.js"></script>-->
+        <script src="script/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Labrecque Family Chiropractic, PC</h3>
+            <h2><strong>Scoliosis Protocol</strong></h2>
+            <form action="#" name="patient-data">
+                <label for="patient-name">patient name</label>
+                <input type="text" id="patient-name" class="patient-name">
+                <label for="dob">dob:</label>
+                <input type="text" id="dob" class="dob">
+            </form>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Initials</th>
+                            <th>Table Total Min</th>
+                            <th>Chair Total Min</th>
+                            <th>Notes (Indicate how patient tolerated treatment)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type='text' class="form-control datepicker" id='datepicker1'>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <label><input type="checkbox">Pt. tolerated treatment well</label><br>
+                                <label><input type="checkbox" class="use-treatment">Pt. c/o after use of</label>
+                                <label><input type=radio name="treatment-method">Scoliosis Table</label>
+                                <label><input type=radio name="treatment-method">Chair</label>
+                                <input type="text" disabled>
+                                <label><input type="checkbox" class="stop-treatment">Stopped treatment prematurely due to</label>
+                                <input type="text" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='text' class="form-control datepicker" id='datepicker2'>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <label><input type="checkbox">Pt. tolerated treatment well</label><br>
+                                <label><input type="checkbox" class="use-treatment">Pt. c/o after use of</label>
+                                <label><input type=radio name="treatment-method">Scoliosis Table</label>
+                                <label><input type=radio name="treatment-method">Chair</label>
+                                <input type="text" disabled>
+                                <label><input type="checkbox" class="stop-treatment">Stopped treatment prematurely due to</label>
+                                <input type="text" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='text' class="form-control datepicker" id='datepicker3'>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <label><input type="checkbox">Pt. tolerated treatment well</label><br>
+                                <label><input type="checkbox" class="use-treatment">Pt. c/o after use of</label>
+                                <label><input type=radio name="treatment-method">Scoliosis Table</label>
+                                <label><input type=radio name="treatment-method">Chair</label>
+                                <input type="text" disabled>
+                                <label><input type="checkbox" class="stop-treatment">Stopped treatment prematurely due to</label>
+                                <input type="text" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='text' class="form-control datepicker" id='datepicker4'>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <label><input type="checkbox">Pt. tolerated treatment well</label><br>
+                                <label><input type="checkbox" class="use-treatment">Pt. c/o after use of</label>
+                                <label><input type=radio name="treatment-method">Scoliosis Table</label>
+                                <label><input type=radio name="treatment-method">Chair</label>
+                                <input type="text" disabled>
+                                <label><input type="checkbox" class="stop-treatment">Stopped treatment prematurely due to</label>
+                                <input type="text" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="text" class="form-control averageTable" value=0 disabled>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control averageChair" value=0 disabled>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-default add-row">Add row</button>
+            </div>
+        </div>       
+    </body>
+</html>

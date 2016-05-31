@@ -1,0 +1,48 @@
+h2,
+h3 {
+    text-align: center;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #ccc;
+}
+label {
+    font-weight: normal;
+}
+th {
+    text-align: center;    
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    vertical-align: middle;
+}
+label[for=patient-name],
+label[for=dob] {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+input[type=text] {
+    height: 34px;
+    padding: 3px 5px;
+    margin: 2px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.invalidData {
+    border: 1px solid #f00;    
+}
+input[type=text]:disabled {
+    background: #eee;
+}
+.yana {
+    background: #ff0;
+}
