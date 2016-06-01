@@ -19,19 +19,17 @@ $(document).ready(function () {
     $(isValidTable).on('blur', getAverageTable);
     $(isValidChair).on('blur', getAverageChair);
     
-    var reg = new RegExp([0-9]);
-    
     function validateData() {
         var value = $(this).val();
         var regexp = /^\d+$/;        
         if(!regexp.test(value) || value < 0 || value > 100) {
-            $(this).addClass('invalidData').val(null);
+            $(this).addClass('invalidData').val(null);            
         };  
     };
     
     function getAverageTable() {
         var sum = 0;
-        for (var i = 0; i < $(isValidTable).length-1; i++) {
+        for (var i = 0; i < $(isValidTable).length-1; i++) {        
             var cur = $(isValidTable)[i];
             var value = $(cur).val();
             if ( value === '') {
@@ -109,5 +107,21 @@ $(document).ready(function () {
         autoclose: true,
         todayHighlight: true
     }).datepicker('setDate', new Date());
+        isValidTable = $('tr td:nth-child(3) input');
+        isValidChair = $('tr td:nth-child(4) input');
+        var createdRow = $('tr').last().prev();
+        var isCreatedTable = $(createdRow).find('td:nth-child(3) input');
+        var isCreatedChair = $(createdRow).find('td:nth-child(4) input');
+        $(isCreatedTable).on('blur', validateData);
+        $(isCreatedChair).on('blur', validateData);
+        $(isCreatedTable).on('focus', function () {
+            $(this).removeClass('invalidData');
+        });
+        $(isCreatedChair).on('focus', function () {
+            $(this).removeClass('invalidData');
+        });
+        $(isCreatedTable).on('blur', getAverageTable);
+        $(isCreatedChair).on('blur', getAverageChair);
+        $('input[type=checkbox]').on('click', disabledInput);  
     };
 });

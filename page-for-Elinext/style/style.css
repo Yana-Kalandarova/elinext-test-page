@@ -37,12 +37,9 @@ input[type=text] {
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-.invalidData {
+input[type=text].invalidData {
     border: 1px solid #f00;    
 }
 input[type=text]:disabled {
     background: #eee;
-}
-.yana {
-    background: #ff0;
 }
